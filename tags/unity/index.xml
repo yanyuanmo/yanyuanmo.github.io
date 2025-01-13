@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Unity | Yanyuan Mo</title>
+    <link>http://localhost:1313/tags/unity/</link>
+      <atom:link href="http://localhost:1313/tags/unity/index.xml" rel="self" type="application/rss+xml" />
+    <description>Unity</description>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Mon, 16 Dec 2024 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>http://localhost:1313/media/icon_hu7729264130191091259.png</url>
+      <title>Unity</title>
+      <link>http://localhost:1313/tags/unity/</link>
+    </image>
+    
+    <item>
+      <title>Mobile Game Development Project — Archiventure</title>
+      <link>http://localhost:1313/project/unity_city_builder/</link>
+      <pubDate>Mon, 16 Dec 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/project/unity_city_builder/</guid>
+      <description>&lt;style&gt;
+.article-container {
+  max-width: 100% !important;
+  padding: 0;
+}
+
+#unity-container {
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#unity-canvas {
+  width: 100%;
+  height: 100%;
+  background: #231F20;
+}
+&lt;/style&gt;
+&lt;div id=&#34;unity-container&#34;&gt;
+  &lt;canvas id=&#34;unity-canvas&#34; tabindex=&#34;-1&#34;&gt;&lt;/canvas&gt;
+&lt;/div&gt;
+&lt;script src=&#34;http://localhost:1313/apps/Archiventure/Build/build.loader.js&#34;&gt;&lt;/script&gt;
+&lt;script&gt;
+  var canvas = document.querySelector(&#34;#unity-canvas&#34;);
+  
+  function resizeCanvas() {
+    var container = document.querySelector(&#34;#unity-container&#34;);
+    var aspectRatio = 600/400;
+    
+    var maxWidth = container.clientWidth;
+    var maxHeight = container.clientHeight;
+    
+    var newWidth = maxWidth;
+    var newHeight = newWidth / aspectRatio;
+    
+    if (newHeight &gt; maxHeight) {
+      newHeight = maxHeight;
+      newWidth = newHeight * aspectRatio;
+    }
+    
+    canvas.style.width = newWidth + &#39;px&#39;;
+    canvas.style.height = newHeight + &#39;px&#39;;
+  }
+
+  window.addEventListener(&#39;resize&#39;, resizeCanvas);
+  resizeCanvas();
+
+  createUnityInstance(canvas, {
+    arguments: [],
+    dataUrl: &#34;/apps/Archiventure/Build/build.data&#34;,
+    frameworkUrl: &#34;/apps/Archiventure/Build/build.framework.js&#34;,
+    codeUrl: &#34;/apps/Archiventure/Build/build.wasm&#34;,
+    streamingAssetsUrl: &#34;/apps/Archiventure/StreamingAssets&#34;,
+    companyName: &#34;DefaultCompany&#34;,
+    productName: &#34;Archiventure&#34;,
+    productVersion: &#34;1.0&#34;,
+    matchWebGLToCanvasSize: true,
+  });
+&lt;/script&gt;
+&lt;p&gt;This project served as the final project of course
+CS 5520 Mobile Application Development. The code is available 
+&lt;/p&gt;
+&lt;p&gt;Archiventure is a cultural city builder mobile game built in Unity with PlayFab backend integration. The game features an innovative isometric grid system with custom coordinate mapping for intuitive building placement, complemented by unique upgrade progression trees for each building type. Implemented comprehensive gameplay systems including resource management, achievement tracking, and an in-game economy. Enhanced player experience through a hybrid save system combining PlayFab cloud storage and local serialization, enabling seamless cross-device progression while maintaining offline gameplay capability.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
